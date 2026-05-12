@@ -1,0 +1,24 @@
+# Bytecode
+*.class
+bin/
+out/
+
+# Dépendances
+lib/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# IntelliJ HTTP Client
+http-client.env.json
+http-client.private.env.json
