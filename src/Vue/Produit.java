@@ -26,13 +26,13 @@ public class Produit {
     private JLabel lbPrix;
     private JTextField tfPrix;
     private JTextField tfStock;
-    private JTextField tfUrlImage;
     private JLabel lbStock;
     private JLabel lbUrlImage;
     private JButton btenregistrer;
     private JComboBox<ModelCategorie> cbCategorie;
     private JButton btsupprimer;
     private JButton btVider;
+    private JComboBox cbImageUrl;
 
     private DefaultTableModel tableModelProduit;
     private List<ModelProduit> produitsAffiches = new ArrayList<>();
@@ -70,6 +70,16 @@ public class Produit {
         cbCategorie.setSelectedIndex(-1);
     }
 
+    // Peuple cbImageUrl avec les URLs récupérées depuis GitHub
+    public void setImageUrls(List<String> urls) {
+        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>();
+        for (String url : urls) {
+            model.addElement(url);
+        }
+        cbImageUrl.setModel(model);
+        cbImageUrl.setSelectedIndex(-1);
+    }
+
     public void setProduits(List<ModelProduit> produits) {
         produitsAffiches = new ArrayList<>(produits);
         tableModelProduit.setRowCount(0);
@@ -101,7 +111,8 @@ public class Produit {
         produit.setDescription(tfDescription.getText().trim());
         produit.setPrix(Double.parseDouble(tfPrix.getText().trim()));
         produit.setStock(Integer.parseInt(tfStock.getText().trim()));
-        produit.setImage(tfUrlImage.getText().trim());
+        Object imageSelection = cbImageUrl.getSelectedItem();
+        produit.setImage(imageSelection != null ? imageSelection.toString().trim() : "");
 
         if (categorieSelectionnee != null) {
             produit.setCategorieId(categorieSelectionnee.getId());
@@ -129,7 +140,12 @@ public class Produit {
         tfDescription.setText(produit.getDescription());
         tfPrix.setText(String.valueOf(produit.getPrix()));
         tfStock.setText(String.valueOf(produit.getStock()));
-        tfUrlImage.setText(produit.getImage());
+        // Normaliser en nom de fichier au cas où la BD stocke une URL complète
+        String image = produit.getImage();
+        if (image != null && image.contains("/")) {
+            image = image.substring(image.lastIndexOf('/') + 1);
+        }
+        cbImageUrl.setSelectedItem(image);
         setSelectedCategorieById(produit.getCategorieId());
     }
 
@@ -138,7 +154,7 @@ public class Produit {
         tfDescription.setText("");
         tfPrix.setText("");
         tfStock.setText("");
-        tfUrlImage.setText("");
+        cbImageUrl.setSelectedIndex(-1);
         cbCategorie.setSelectedIndex(-1);
         table.clearSelection();
     }
