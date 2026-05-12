@@ -17,7 +17,6 @@ public class Produit {
 
     private JPanel mainPanel;
     private JTable table;
-    private JLabel lbId;
     private JLabel lbNomProduit;
     private JTextField tfNomProduit;
     private JLabel lbCategorie;
@@ -30,7 +29,6 @@ public class Produit {
     private JTextField tfUrlImage;
     private JLabel lbStock;
     private JLabel lbUrlImage;
-    private JTextField tfId;
     private JButton btenregistrer;
     private JComboBox<ModelCategorie> cbCategorie;
     private JButton btsupprimer;
@@ -57,11 +55,6 @@ public class Produit {
 
     public void addViderListener(ActionListener listener) {
         btVider.addActionListener(listener);
-    }
-
-    public Integer getIdFromForm() {
-        String text = tfId.getText().trim();
-        return text.isEmpty() ? null : Integer.parseInt(text);
     }
 
     public void addProduitSelectionListener(ListSelectionListener listener) {
@@ -102,8 +95,8 @@ public class Produit {
         ModelCategorie categorieSelectionnee = getSelectedCategorie();
 
         ModelProduit produit = new ModelProduit();
-        Integer id = getIdFromForm();
-        if (id != null) produit.setId(id);
+        ModelProduit selectionne = getSelectedProduit();
+        if (selectionne != null) produit.setId(selectionne.getId());
         produit.setNom(tfNomProduit.getText().trim());
         produit.setDescription(tfDescription.getText().trim());
         produit.setPrix(Double.parseDouble(tfPrix.getText().trim()));
@@ -132,7 +125,6 @@ public class Produit {
             return;
         }
 
-        tfId.setText(String.valueOf(produit.getId()));
         tfNomProduit.setText(produit.getNom());
         tfDescription.setText(produit.getDescription());
         tfPrix.setText(String.valueOf(produit.getPrix()));
@@ -142,7 +134,6 @@ public class Produit {
     }
 
     public void viderFormulaire() {
-        tfId.setText("");
         tfNomProduit.setText("");
         tfDescription.setText("");
         tfPrix.setText("");

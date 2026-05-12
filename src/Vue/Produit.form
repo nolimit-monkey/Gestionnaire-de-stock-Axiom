@@ -65,46 +65,6 @@
           <size top="10" left="10" bottom="10" right="10"/>
         </border>
         <children>
-          <component id="5b97c" class="javax.swing.JLabel" binding="lbId">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Tahoma" size="20" style="0"/>
-              <text value="Id :"/>
-            </properties>
-          </component>
-          <component id="6cd0c" class="javax.swing.JLabel" binding="lbNomProduit">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Tahoma" size="20" style="0"/>
-              <labelFor value="2df38"/>
-              <text value="Nom :"/>
-            </properties>
-          </component>
-          <component id="2df38" class="javax.swing.JTextField" binding="tfNomProduit">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="452" height="35"/>
-              </grid>
-            </constraints>
-            <properties>
-              <focusable value="true"/>
-              <font name="Tahoma" size="20" style="0"/>
-            </properties>
-          </component>
-          <component id="4b573" class="javax.swing.JLabel" binding="lbCategorie">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Tahoma" size="20" style="0"/>
-              <labelFor value="da939"/>
-              <text value="Catégorie :"/>
-            </properties>
-          </component>
           <component id="d0c2a" class="javax.swing.JLabel" binding="lbDescription">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -124,77 +84,7 @@
             <properties>
               <focusable value="true"/>
               <font name="Tahoma" size="20" style="0"/>
-            </properties>
-          </component>
-          <component id="7f4f4" class="javax.swing.JTextField" binding="tfPrix">
-            <constraints>
-              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <focusable value="true"/>
-              <font name="Tahoma" size="20" style="0"/>
-            </properties>
-          </component>
-          <component id="79b57" class="javax.swing.JTextField" binding="tfStock">
-            <constraints>
-              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <focusable value="true"/>
-              <font name="Tahoma" size="20" style="0"/>
-            </properties>
-          </component>
-          <component id="a8b04" class="javax.swing.JTextField" binding="tfUrlImage">
-            <constraints>
-              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <focusable value="true"/>
-              <font name="Tahoma" size="20" style="0"/>
-            </properties>
-          </component>
-          <component id="da939" class="javax.swing.JComboBox" binding="cbCategorie">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="452" height="34"/>
-              </grid>
-            </constraints>
-            <properties/>
-          </component>
-          <component id="d925e" class="javax.swing.JLabel" binding="lbPrix">
-            <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Tahoma" size="20" style="0"/>
-              <labelFor value="7f4f4"/>
-              <text value="Prix :"/>
-            </properties>
-          </component>
-          <component id="91642" class="javax.swing.JLabel" binding="lbStock">
-            <constraints>
-              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Tahoma" size="20" style="0"/>
-              <labelFor value="79b57"/>
-              <text value="Stock :"/>
-            </properties>
-          </component>
-          <component id="3be1" class="javax.swing.JLabel" binding="lbUrlImage">
-            <constraints>
-              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="Tahoma" size="20" style="0"/>
-              <labelFor value="a8b04"/>
-              <text value="URL image :"/>
+              <text value=""/>
             </properties>
           </component>
           <component id="ff370" class="javax.swing.JButton" binding="btsupprimer">
@@ -217,24 +107,114 @@
               <text value="Enregistrer"/>
             </properties>
           </component>
-          <component id="b3239" class="javax.swing.JTextField" binding="tfId">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="452" height="35"/>
-              </grid>
-            </constraints>
-            <properties>
-              <enabled value="false"/>
-              <focusable value="true"/>
-              <font name="Tahoma" size="20" style="0"/>
-            </properties>
-          </component>
           <component id="fba8d" class="javax.swing.JButton" binding="btVider">
             <constraints>
               <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="Vider"/>
+            </properties>
+          </component>
+          <component id="6cd0c" class="javax.swing.JLabel" binding="lbNomProduit">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="20" style="0"/>
+              <labelFor value="2df38"/>
+              <text value="Nom :"/>
+            </properties>
+          </component>
+          <component id="2df38" class="javax.swing.JTextField" binding="tfNomProduit">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="452" height="35"/>
+              </grid>
+            </constraints>
+            <properties>
+              <focusable value="true"/>
+              <font name="Tahoma" size="20" style="0"/>
+            </properties>
+          </component>
+          <component id="4b573" class="javax.swing.JLabel" binding="lbCategorie">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="20" style="0"/>
+              <labelFor value="da939"/>
+              <text value="Catégorie :"/>
+            </properties>
+          </component>
+          <component id="da939" class="javax.swing.JComboBox" binding="cbCategorie">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="452" height="34"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d925e" class="javax.swing.JLabel" binding="lbPrix">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="20" style="0"/>
+              <labelFor value="7f4f4"/>
+              <text value="Prix :"/>
+            </properties>
+          </component>
+          <component id="7f4f4" class="javax.swing.JTextField" binding="tfPrix">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <focusable value="true"/>
+              <font name="Tahoma" size="20" style="0"/>
+            </properties>
+          </component>
+          <component id="91642" class="javax.swing.JLabel" binding="lbStock">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="20" style="0"/>
+              <labelFor value="79b57"/>
+              <text value="Stock :"/>
+            </properties>
+          </component>
+          <component id="79b57" class="javax.swing.JTextField" binding="tfStock">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <focusable value="true"/>
+              <font name="Tahoma" size="20" style="0"/>
+            </properties>
+          </component>
+          <component id="3be1" class="javax.swing.JLabel" binding="lbUrlImage">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Tahoma" size="20" style="0"/>
+              <labelFor value="a8b04"/>
+              <text value="URL image :"/>
+            </properties>
+          </component>
+          <component id="a8b04" class="javax.swing.JTextField" binding="tfUrlImage">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <focusable value="true"/>
+              <font name="Tahoma" size="20" style="0"/>
             </properties>
           </component>
         </children>
